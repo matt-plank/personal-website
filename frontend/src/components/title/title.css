@@ -1,0 +1,24 @@
+.title {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--bg-primary);
+}
+
+.title .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title .content h1 {
+    font-size: 4rem;
+}
+
+.title .content h2 {
+    font-size: 2rem;
+    color: var(--secondary)
+}

@@ -6,3 +6,10 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
+:root {
+    --secondary: gray;
+
+    --bg-primary: white;
+    --bg-secondary: lightgray;
+}
