@@ -1,6 +1,7 @@
-import CV from "./components/cv/cv";
-import Projects from "./components/projects/projects";
-import Title from "./components/title/title";
+import "./app.css";
+import CV from "./sections/cv/cv";
+import Projects from "./sections/projects/projects";
+import Title from "./sections/title/title";
 
 function App() {
   return (

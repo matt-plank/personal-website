@@ -1,0 +1,12 @@
+.section {
+    width: 100%;
+    padding: 2rem;
+}
+
+.section:nth-child(odd) {
+    background-color: var(--bg-primary);
+}
+
+.section:nth-child(even) {
+    background-color: var(--bg-secondary);
+}

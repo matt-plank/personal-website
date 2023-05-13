@@ -1,8 +1,6 @@
 .projects {
     height: 50vh;
-
-    background-color: var(--bg-secondary);
-
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
