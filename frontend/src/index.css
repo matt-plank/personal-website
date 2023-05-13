@@ -11,5 +11,7 @@
     --secondary: gray;
 
     --bg-primary: white;
-    --bg-secondary: lightgray;
+    --bg-secondary: rgb(247, 247, 247);
+
+    --rounded-small: 0.5rem;
 }

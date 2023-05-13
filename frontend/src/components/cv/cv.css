@@ -1,0 +1,46 @@
+.cv {
+    height: 50vh;
+
+    background-color: var(--bg-secondary);
+
+    display: flex;
+    justify-content: center;
+}
+
+.cv h2 {
+    font-size: 3rem;
+}
+
+.cv .left {
+    height: 100%;
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cv .left p {
+    color: var(--secondary);
+}
+
+.cv .right {
+    height: 100%;
+    width: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv .right img {
+    height: 20em;
+    width: 15rem;
+    background-color: black;
+
+    transform: rotate(-10deg);
+    border-radius: var(--rounded-small);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
