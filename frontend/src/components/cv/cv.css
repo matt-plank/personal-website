@@ -1,7 +1,7 @@
 .cv {
     height: 50vh;
 
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
 
     display: flex;
     justify-content: center;

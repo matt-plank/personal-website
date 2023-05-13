@@ -1,0 +1,43 @@
+.projects {
+    height: 50vh;
+
+    background-color: var(--bg-secondary);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects h2 {
+    font-size: 3rem;
+    margin: 4rem;
+}
+
+.cards {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card {
+    height: 100%;
+    width: 30rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    background-color: var(--bg-primary);
+    box-shadow: 0 0 1rem var(--shadow);
+    border-radius: var(--rounded-small);
+}
