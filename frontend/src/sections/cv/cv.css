@@ -39,6 +39,13 @@
     background-color: black;
 
     transform: rotate(-10deg);
+    transition-duration: .4s;
+    cursor: pointer;
+    
     border-radius: var(--rounded-small);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.cv .right img:hover {
+    transform: rotate(0deg);
 }
