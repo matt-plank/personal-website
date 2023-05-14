@@ -1,5 +1,5 @@
 .projects {
-    height: 50vh;
+    height: 25rem;
     
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
 
 .projects h2 {
     font-size: 3rem;
-    margin: 4rem;
+    margin-bottom: 3rem;
 }
 
 .cards {
@@ -22,7 +22,6 @@
     gap: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-bottom: 2rem;
 }
 
 .card {
