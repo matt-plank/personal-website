@@ -1,7 +1,7 @@
 from django.urls import path
 
-from .views import ResumeView
+from .views import FileView
 
 urlpatterns = [
-    path("resume", ResumeView.as_view()),
+    path("files/<str:name>", FileView.as_view()),
 ]
