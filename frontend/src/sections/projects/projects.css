@@ -56,5 +56,5 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    background-color: black;
+    background-color: var(--secondary);
 }
