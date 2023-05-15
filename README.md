@@ -4,12 +4,13 @@ This is the git repository for my personal portfolio website. It is built using 
 
 ## Installation
 
-### Backend
+### Backend & Pre-commit
 
 To install the backend, you will need to have Python 3.8 installed. You can install the required packages by running the following command:
 
 ```bash
 pip install -r requirements.txt
+pre-commit install
 ```
 
 ### Frontend
