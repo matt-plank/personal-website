@@ -8,7 +8,9 @@ const CV = () => {
         <p>Download my CV if you're interested in my skill set.</p>
       </div>
       <div className="right">
-        <img src="#" alt="CV" />
+        <a href="http://localhost:8000/api/files/resume">
+          <img src="http://localhost:8000/api/files/resume_image" alt="CV" />
+        </a>
       </div>
     </div>
   );
