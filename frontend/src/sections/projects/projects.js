@@ -21,24 +21,28 @@ const Projects = () => {
       <h2>Projects</h2>
 
       <div className="cards">
-        {cards.map((card) => (
-          <div className="card">
-            <h3>{card.name}</h3>
-            <p>{card.description}</p>
-            <img
-              src={`${API_ROOT}/api/files/${card.imageName}`}
-              alt={card.name}
-            />
-            <a
-              href={card.link}
-              target="_blank"
-              rel="noreferrer"
-              className="button"
-            >
-              View
-            </a>
-          </div>
-        ))}
+        {cards.map((card) => {
+          // Only attempt to use an image if the card is attached to an image
+          const cardSrc = card.imageName
+            ? `${API_ROOT}/api/files/${card.imageName}`
+            : "";
+
+          return (
+            <div className="card">
+              <h3>{card.name}</h3>
+              <p>{card.description}</p>
+              <img src={cardSrc} alt={card.name} />
+              <a
+                href={card.link}
+                target="_blank"
+                rel="noreferrer"
+                className="button"
+              >
+                View
+              </a>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

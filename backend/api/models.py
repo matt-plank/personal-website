@@ -17,7 +17,7 @@ class Project(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     link = models.CharField(max_length=100)
-    image = models.ForeignKey(File, on_delete=models.DO_NOTHING, null=True)
+    image = models.ForeignKey(File, on_delete=models.DO_NOTHING, blank=True, null=True)
 
     def __str__(self):
         return f"{self.name}"

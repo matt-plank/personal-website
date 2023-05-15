@@ -9,6 +9,9 @@ class ProjectSerializer(serializers.ModelSerializer):
     imageName = serializers.SerializerMethodField()
 
     def get_imageName(self, obj):
+        if obj.image is None:
+            return None
+
         return obj.image.name
 
     class Meta:
