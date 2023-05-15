@@ -10,3 +10,18 @@
 .section:nth-child(even) {
     background-color: var(--bg-secondary);
 }
+
+.button {
+    padding: 0.5rem 1rem;
+    border-radius: var(--rounded-xsmall);
+    border: none;
+    background-color: var(--secondary);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-0.2rem);
+}

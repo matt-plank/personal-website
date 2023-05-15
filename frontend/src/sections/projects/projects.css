@@ -1,6 +1,4 @@
 .projects {
-    height: 25rem;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,7 +23,7 @@
 }
 
 .card {
-    height: 100%;
+    height: 25rem;
     width: 30rem;
 
     display: flex;
@@ -33,8 +31,30 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    text-align: center;
 
     background-color: var(--bg-primary);
     box-shadow: 0 0 1rem var(--shadow);
     border-radius: var(--rounded-small);
+}
+
+.card h3 {
+    margin-top: 2rem;
+}
+
+.card a {
+    margin-bottom: 2rem;
+}
+
+.card p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    white-space: pre-wrap;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: black;
 }

@@ -9,8 +9,8 @@ const CV = () => {
         <p>Download my CV if you're interested in my skill set.</p>
       </div>
       <div className="right">
-        <a href={`${API_ROOT}/api/files/resume`}>
-          <img src={`${API_ROOT}/api/files/resume_image`} alt="CV" />
+        <a href={`${API_ROOT}/api/files/resume.pdf`}>
+          <img src={`${API_ROOT}/api/files/resume.png`} alt="CV" />
         </a>
       </div>
     </div>

@@ -8,6 +8,11 @@
   font-family: 'Raleway', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 :root {
     --secondary: gray;
 
@@ -15,6 +20,7 @@
     --bg-secondary: rgb(247, 247, 247);
 
     --rounded-small: 0.5rem;
+    --rounded-xsmall: 0.25rem;
 
     --shadow: rgb(216, 216, 216);
 }
