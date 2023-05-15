@@ -1,3 +1,4 @@
+import { API_ROOT } from "../../config/config";
 import "./cv.css";
 
 const CV = () => {
@@ -8,8 +9,8 @@ const CV = () => {
         <p>Download my CV if you're interested in my skill set.</p>
       </div>
       <div className="right">
-        <a href="http://localhost:8000/api/files/resume">
-          <img src="http://localhost:8000/api/files/resume_image" alt="CV" />
+        <a href={`${API_ROOT}/api/files/resume`}>
+          <img src={`${API_ROOT}/api/files/resume_image`} alt="CV" />
         </a>
       </div>
     </div>
