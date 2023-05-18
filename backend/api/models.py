@@ -5,10 +5,10 @@ class File(models.Model):
     """A file that can be uploaded to the server."""
 
     file = models.FileField(blank=False, null=False, upload_to="files/")
-    name = models.CharField(max_length=100, blank=False, null=False)
+    file_name = models.CharField(max_length=100, blank=False, null=False)
 
     def __str__(self):
-        return f"{self.name} - {self.file}"
+        return f"{self.file_name}"
 
 
 class Project(models.Model):

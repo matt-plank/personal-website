@@ -1,3 +1,5 @@
+import os
+
 from django.http import FileResponse
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -11,7 +13,7 @@ class FileView(APIView):
 
     def get(self, request, name):
         """Return the file with the given name."""
-        file = File.objects.filter(name=name).first()
+        file = File.objects.filter(file_name=name).first()
 
         if not file:
             return Response({"message": "File not found."}, status=404)
