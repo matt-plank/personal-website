@@ -6,14 +6,14 @@ from .models import Project
 class ProjectSerializer(serializers.ModelSerializer):
     """Serializes a project."""
 
-    imageName = serializers.SerializerMethodField()
+    imageFileName = serializers.SerializerMethodField()
 
-    def get_imageName(self, obj):
+    def get_imageFileName(self, obj):
         if obj.image is None:
             return None
 
-        return obj.image.name
+        return obj.image.file_name
 
     class Meta:
         model = Project
-        fields = ("name", "description", "link", "imageName")
+        fields = ("name", "description", "link", "imageFileName")

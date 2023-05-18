@@ -26,12 +26,12 @@ const Projects = () => {
             <div className="card">
               <h3>{card.name}</h3>
               <p>{card.description}</p>
-              {card.ImageName && (
-                <img
-                  src={`${API_ROOT}/api/files/${card.imageName}`}
-                  alt={card.name}
-                />
-              )}
+
+              <img
+                src={`${API_ROOT}/api/files/${card.imageFileName}`}
+                alt={card.name}
+              />
+
               <a
                 href={card.link}
                 target="_blank"
