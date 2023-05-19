@@ -24,22 +24,22 @@ const Projects = () => {
         {cards.map((card) => {
           return (
             <div className="card">
-              <h3>{card.name}</h3>
-              <p>{card.description}</p>
+              <div className="content">
+                <h3>{card.name}</h3>
+                <a
+                  href={card.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="button"
+                >
+                  View
+                </a>
+              </div>
 
               <img
                 src={`${API_ROOT}/api/files/${card.imageFileName}`}
                 alt={card.name}
               />
-
-              <a
-                href={card.link}
-                target="_blank"
-                rel="noreferrer"
-                className="button"
-              >
-                View
-              </a>
             </div>
           );
         })}
