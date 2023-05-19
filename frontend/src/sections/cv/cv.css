@@ -22,6 +22,8 @@
 
 .cv .left p {
     color: var(--secondary);
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .cv .right {

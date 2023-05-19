@@ -88,6 +88,7 @@
 .card .content p {
     white-space: pre-wrap;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .card .content .tech {
