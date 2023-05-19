@@ -1,11 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-  SiDjango,
-  SiNodedotjs,
-  SiPython,
-  SiReact,
-  SiTerraform,
-} from "react-icons/si";
+import TechnologyIcon from "../../components/TechnologyIcon/TechnologyIcon";
 import { API_ROOT } from "../../config/config";
 import "./projects.css";
 
@@ -28,9 +22,9 @@ const Projects = () => {
       <h2>Projects</h2>
 
       <div className="cards">
-        {cards.map((card) => {
+        {cards.map((card, i) => {
           return (
-            <div className="card">
+            <div className="card" key={i}>
               <div className="title">
                 <img
                   src={`${API_ROOT}/api/files/${card.imageFileName}`}
@@ -40,11 +34,15 @@ const Projects = () => {
               </div>
               <div className="content">
                 <div className="tech">
-                  <SiPython />
-                  <SiDjango />
-                  <SiNodedotjs />
-                  <SiReact />
-                  <SiTerraform />
+                  {card.technologies.map((technology, i) => {
+                    return (
+                      <TechnologyIcon
+                        name={technology.name}
+                        link={technology.link}
+                        key={i}
+                      />
+                    );
+                  })}
                 </div>
                 <p>{card.description}</p>
                 <button className="button">View</button>

@@ -18,6 +18,17 @@ class Project(models.Model):
     description = models.TextField()
     link = models.CharField(max_length=100)
     image = models.ForeignKey(File, on_delete=models.DO_NOTHING, blank=True, null=True)
+    technologies = models.ManyToManyField("Technology")
+
+    def __str__(self):
+        return f"{self.name}"
+
+
+class Technology(models.Model):
+    """A technology associated with a project."""
+
+    name = models.CharField(max_length=100)
+    link = models.CharField(max_length=100)
 
     def __str__(self):
         return f"{self.name}"

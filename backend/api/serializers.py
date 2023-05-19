@@ -1,6 +1,14 @@
 from rest_framework import serializers
 
-from .models import Project
+from .models import Project, Technology
+
+
+class TechnologySerializer(serializers.ModelSerializer):
+    """Serializes a technology."""
+
+    class Meta:
+        model = Technology
+        fields = ("name", "link")
 
 
 class ProjectSerializer(serializers.ModelSerializer):
@@ -14,6 +22,8 @@ class ProjectSerializer(serializers.ModelSerializer):
 
         return obj.image.file_name
 
+    technologies = TechnologySerializer(many=True)
+
     class Meta:
         model = Project
-        fields = ("name", "description", "link", "imageFileName")
+        fields = ("name", "description", "link", "imageFileName", "technologies")
