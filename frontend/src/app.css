@@ -1,6 +1,6 @@
 .section {
     width: 100%;
-    padding: 2rem;
+    padding: 4rem;
 }
 
 .section:nth-child(odd) {
