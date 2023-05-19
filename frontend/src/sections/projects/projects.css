@@ -94,14 +94,14 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    font-size: 2rem;
 }
 
 .card .content svg {
     transition-duration: 0.3s;
     cursor: pointer;
+    font-size: 2rem;
 }
 
 .card .content svg:hover {
-    transform: translate(0, -0.5rem);
+    transform: translate(0, 0.25rem);
 }

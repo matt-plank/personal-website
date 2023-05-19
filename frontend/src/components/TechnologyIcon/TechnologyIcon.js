@@ -6,6 +6,8 @@ import {
   SiTensorflow,
   SiTerraform,
 } from "react-icons/si";
+import { Tooltip } from "react-tooltip";
+import "react-tooltip/dist/react-tooltip.css";
 
 const ICON_MAP = {
   Django: <SiDjango />,
@@ -18,9 +20,18 @@ const ICON_MAP = {
 
 const TechnologyIcon = ({ name, link }) => {
   return (
-    <a href={link} target="_blank" rel="noreferrer">
-      {ICON_MAP[name]}
-    </a>
+    <>
+      <a
+        data-tooltip-id={name}
+        data-tooltip-content={name}
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {ICON_MAP[name]}
+      </a>
+      <Tooltip id={name} />
+    </>
   );
 };
 
