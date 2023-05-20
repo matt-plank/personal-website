@@ -45,7 +45,9 @@ const Projects = () => {
                   })}
                 </div>
                 <p>{card.description}</p>
-                <button className="button">View</button>
+                <a href={card.link} target="_blank" rel="noreferrer">
+                  <button className="button">View</button>
+                </a>
               </div>
             </div>
           );
