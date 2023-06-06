@@ -2,6 +2,7 @@ import {
   SiDjango,
   SiNodedotjs,
   SiPython,
+  SiPytorch,
   SiReact,
   SiTensorflow,
   SiTerraform,
@@ -16,6 +17,7 @@ const ICON_MAP = {
   React: <SiReact />,
   Terraform: <SiTerraform />,
   TensorFlow: <SiTensorflow />,
+  PyTorch: <SiPytorch />,
 };
 
 const TechnologyIcon = ({ name, link }) => {
