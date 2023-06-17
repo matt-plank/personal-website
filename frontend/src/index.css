@@ -25,4 +25,6 @@ a {
     --rounded-xsmall: 0.25rem;
 
     --shadow: rgb(216, 216, 216);
+
+    --warning: rgb(198, 70, 70);
 }
