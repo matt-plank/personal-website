@@ -17,14 +17,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
 }
 
 .card {
     height: 25rem;
-    width: 30rem;
+    width: 80%;
+    max-width: 30rem;
+
     border-radius: var(--rounded-small);
     background-color: var(--bg-primary);
     box-shadow: 0 0 1rem var(--shadow);
