@@ -1,8 +1,8 @@
 .cv {
-    height: 30rem;
-
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .cv h2 {
@@ -12,6 +12,8 @@
 .cv .left {
     height: 100%;
     width: 30%;
+    min-width: 20rem;
+    margin-bottom: 5rem;
 
     display: flex;
     flex-direction: column;
@@ -29,6 +31,7 @@
 .cv .right {
     height: 100%;
     width: 30%;
+    min-width: 20rem;
 
     display: flex;
     justify-content: center;
