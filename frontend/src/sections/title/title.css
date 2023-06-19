@@ -10,6 +10,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .title .content .links {
@@ -34,6 +37,7 @@
 .title .content h1 {
     font-size: 4rem;
     position: relative;
+    text-align: center;
 }
 
 .title .content h1::before, .title .content h1::after {
@@ -58,5 +62,6 @@
 
 .title .content h2 {
     font-size: 2rem;
-    color: var(--secondary)
+    color: var(--secondary);
+    text-align: center;
 }
